@@ -1,6 +1,6 @@
 <h1>Next.js Invoices and Customers dashbord (Nxt.js 14 official tutorial)</h1>
 
-<a href="https://invoices-dashboard-liart.vercel.app/dashboard" target="_blank">Vercel deploy here</a>
+<a href="https://invoices-dashboard-liart.vercel.app" target="_blank">Vercel deploy here</a>
 
 What to do":
 

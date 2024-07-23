@@ -5,17 +5,15 @@ import {
   CustomersTableType,
   FormattedCustomersTable,
 } from '@/app/lib/definitions';
+import {  fetchFilteredCustomers } from '@/app/lib/data';
 
-export default async function CustomersTable({
-  customers,
+export default async function CustomersTable( { query
 }: {
-  customers: FormattedCustomersTable[];
+  query: string
 }) {
+  const customers = await fetchFilteredCustomers(query);
   return (
     <div className="w-full">
-      <h1 className={`${lusitana.className} mb-8 text-xl md:text-2xl`}>
-        Customers
-      </h1>
       <Search placeholder="Search customers..." />
       <div className="mt-6 flow-root">
         <div className="overflow-x-auto">
